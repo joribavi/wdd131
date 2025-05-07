@@ -2,7 +2,7 @@
 
  header h1 {
 
-     background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.603), rgba(255, 255, 0, 0.267));
+     background-image: linear-gradient(to bottom right, rgba(3, 4, 75, 0.384), rgba(4, 0, 255, 0.329));
      padding: 20px;
 
 
@@ -43,6 +43,7 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
      border: 2px solid rgb(110, 110, 110);
+     margin-top: 20px;
 
  }
 
@@ -56,11 +57,13 @@
 
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
      max-width: 300px;
-     margin: auto;
+     margin: 20px 20px 20px 20px;
      text-align: center;
      font-family: arial;
      border-radius: 5px;
      border: 2px solid black;
+
+
 
 
  }
@@ -78,3 +81,18 @@
 
 
  /* footer */
+
+ footer {
+
+     margin-top: 20px;
+     background-image: linear-gradient(to bottom right, rgb(3, 75, 71), rgba(4, 0, 255, 0.829));
+     padding: 10px;
+
+ }
+
+ footer p {
+     color: white;
+     margin: 0 auto;
+     display: block;
+     text-align: center;
+ }
