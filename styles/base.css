@@ -10,9 +10,14 @@
 
  header h1 {
 
-     background-image: linear-gradient(to bottom right, rgba(202, 160, 45, 0.384), rgba(168, 29, 29, 0.329));
+     background-color: #88a1e6;
      padding: 20px;
      gap: 0;
+     margin-bottom: 0;
+     margin-top: 0;
+     color: white;
+
+
 
 
  }
@@ -20,7 +25,7 @@
  .navigation-menu {
      display: flex;
      flex-direction: row;
-     background-color: rgba(0, 22, 94, 0.884);
+     background-color: #1e3a8a;
      max-height: 300px;
      gap: 20px;
      justify-content: center;
@@ -69,7 +74,7 @@
      margin: 20px 20px 20px 20px;
      text-align: center;
      font-family: arial;
-     border-radius: 5px;
+     border-radius: 13px;
      border: 2px solid black;
      display: flex;
      flex-direction: column;
@@ -90,9 +95,15 @@
  .title {
 
      max-width: 100%;
-     background-color: rgba(137, 43, 226, 0.562);
+     background-color: #1e3a8a;
      align-self: stretch;
      margin-bottom: 15px;
+     border-top-right-radius: 10px;
+     border-top-left-radius: 10px;
+ }
+
+ .title h1 {
+     color: white;
  }
 
 
@@ -105,13 +116,28 @@
      margin-bottom: 10px;
  }
 
+ .card ul {
+
+     list-style: none;
+     text-align: left;
+
+ }
+
+ /* thanks message */
+
+ .thanks-message {
+
+     font-size: larger;
+     display: block;
+     margin: 0 auto;
+ }
 
  /* footer */
 
  footer {
 
      margin-top: 50px;
-     background-image: linear-gradient(to bottom right, rgb(3, 75, 71), rgba(4, 0, 255, 0.829));
+     background-color: #1f2937;
      padding: 10px;
 
 
@@ -122,4 +148,5 @@
      margin: 0 auto;
      display: block;
      text-align: center;
+
  }
