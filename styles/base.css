@@ -56,7 +56,7 @@
 
 
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     max-width: 300px;
+     max-width: 600px;
      margin: 20px 20px 20px 20px;
      text-align: center;
      font-family: arial;
@@ -70,13 +70,16 @@
 
  .card img {
 
-     width: 50%;
+     width: 20%;
  }
 
 
  .content {
 
      color: rgba(0, 0, 0, 0.726);
+     text-align: justify;
+     margin-right: 20px;
+     margin-left: 20px;
  }
 
 
