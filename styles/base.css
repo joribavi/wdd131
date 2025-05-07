@@ -40,7 +40,8 @@
      max-width: 1200px;
      max-height: 700px;
      margin: 0 auto;
-
+     display: grid;
+     grid-template-columns: 1fr 1fr;
      border: 2px solid rgb(110, 110, 110);
 
  }
@@ -48,15 +49,32 @@
 
  /* cards section */
 
+
+
  .card {
+
+
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
      max-width: 300px;
      margin: auto;
      text-align: center;
      font-family: arial;
+     border-radius: 5px;
+     border: 2px solid black;
+
+
  }
 
  .card img {
 
      width: 50%;
  }
+
+
+ .content {
+
+     color: rgba(0, 0, 0, 0.726);
+ }
+
+
+ /* footer */
