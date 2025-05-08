@@ -1,4 +1,14 @@
  /* general styling */
+ :root {
+     --blue: #1e3a8a;
+     --white: #fcf8f4;
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+
 
  a {
      text-decoration: none;
@@ -20,6 +30,7 @@
      margin-bottom: 0;
      margin-top: 0;
      color: black;
+     text-align: center;
 
 
 
@@ -29,7 +40,7 @@
  .navigation-menu {
      display: flex;
      flex-direction: row;
-     background-color: #1e3a8a;
+     background-color: var(--blue);
      max-height: 300px;
      gap: 20px;
      justify-content: center;
@@ -41,7 +52,7 @@
 
  .navigation-menu a {
      text-decoration: none;
-     color: white;
+     color: var(--white);
      font-size: large;
 
  }
@@ -61,7 +72,7 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
 
-     margin-top: 20px;
+     margin-top: 50px;
 
  }
 
@@ -74,7 +85,8 @@
 
 
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     max-width: 600px;
+     max-width: 500px;
+     min-height: 600px;
      margin: 20px 20px 20px 20px;
      text-align: center;
      font-family: arial;
@@ -94,12 +106,15 @@
  .card img {
 
      width: 20%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+
  }
 
  .title {
 
      max-width: 100%;
-     background-color: #1e3a8a;
+     background-color: var(--blue);
      align-self: stretch;
      margin-bottom: 15px;
      border-top-right-radius: 10px;
@@ -107,7 +122,7 @@
  }
 
  .title h1 {
-     color: white;
+     color: var(--white);
  }
 
 
@@ -123,10 +138,16 @@
  .card ul {
 
      list-style: none;
+     align-self: flex-start;
      text-align: left;
+
+
 
  }
 
+ .card a {
+     color: rgb(32, 60, 219);
+ }
 
 
  /* thanks message */
