@@ -1,4 +1,11 @@
 
+// select the DOM elements for output
+
+const currentyear = document.querySelector("#currentyear");
+
+// use the date object
+const today = new Date();
 
 
-year.innerHTML = `getFullYear(): <span class="currentyear">${today.getFullYear()}</span>; 
+
+currentyear.innerHTML = ` <span class="highlight">${today.getFullYear()}</span> `;
