@@ -1,4 +1,8 @@
- /* basic body styling */
+ /* general styling */
+
+ a {
+     text-decoration: none;
+ }
 
  body {
      display: flex;
@@ -122,6 +126,8 @@
      text-align: left;
 
  }
+
+
 
  /* thanks message */
 
