@@ -111,7 +111,12 @@
 
  }
 
- .title {
+ .card h1 {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+
+ .card .title {
 
      max-width: 100%;
      background-color: var(--blue);
@@ -157,6 +162,8 @@
      font-size: larger;
      display: block;
      margin: 0 auto;
+
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
  /* footer */
