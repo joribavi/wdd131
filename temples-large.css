@@ -3,10 +3,23 @@
 :root {
     --green: rgba(6, 31, 13, 0.836);
     --dark: #120238;
+    --yellow: #d4af37;
 }
 
 * {
     box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--yellow);
+
+}
+
+header h1 {
+    color: var(--green);
+    padding-top: 10px;
+
 }
 
 h1 {
@@ -38,7 +51,7 @@ nav {
 
 .menu a:hover {
 
-    background-color: rgba(0, 0, 255, 0.541);
+    background-color: var(--yellow);
 }
 
 .menu li {
