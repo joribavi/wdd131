@@ -13,31 +13,53 @@
     /* Menu styling */
     #hamburguer-menu {
         display: block;
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: 700;
         text-decoration: none;
         padding: 0.5rem 0.75rem;
         background-color: var(--green);
         color: white;
+
+
     }
 
     #hamburguer-menu::before {
         content: "≡";
-        color: var(--dark);
+
+
     }
 
     nav {
         background-color: var(--green);
+        max-height: 100px;
+
+
+
     }
 
-    .menu {
+
+    nav .menu {
         list-style: none;
         margin: 0 auto;
         max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--green);
+        position: relative;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+
+
+
+
     }
+
+
 
     .menu li {
         display: none;
+
     }
 
     .menu a {
@@ -50,12 +72,15 @@
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
 
+
+
     }
 
     .menu a:hover,
     .menu a:active {
         color: white;
         background-color: black;
+        padding: 10px;
     }
 
     .show li {
@@ -64,7 +89,8 @@
 
     #hamburguer-menu.show::before {
         content: "X";
-        color: white;
+
     }
+
 
 }
