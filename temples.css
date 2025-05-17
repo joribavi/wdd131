@@ -1,0 +1,70 @@
+/* Mobile view styling */
+
+@media screen and (max-width:576px) {
+
+
+    main .figure-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+
+    }
+
+    /* Menu styling */
+    #hamburguer-menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        background-color: var(--green);
+        color: white;
+    }
+
+    #hamburguer-menu::before {
+        content: "≡";
+        color: var(--dark);
+    }
+
+    nav {
+        background-color: var(--green);
+    }
+
+    .menu {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+
+    }
+
+    .menu a:hover,
+    .menu a:active {
+        color: white;
+        background-color: black;
+    }
+
+    .show li {
+        display: block;
+    }
+
+    #hamburguer-menu.show::before {
+        content: "X";
+        color: white;
+    }
+
+}
