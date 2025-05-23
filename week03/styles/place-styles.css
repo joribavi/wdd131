@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-family: "Rowdies", sans-serif;
+    color: var(--secundary-color);
+}
+
 /* header styling  */
 header {
     background-image: linear-gradient(to left, var(--primary-color), blue, rgb(64, 82, 245));
@@ -27,6 +32,7 @@ header {
 header h1 {
     color: var(--fonts-color);
     text-align: center;
+    font-family: "Rowdies", sans-serif;
 
 
 }
