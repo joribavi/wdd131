@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Assignment Webpage Week03 - Jonathan Villegas</title>
+    <link rel="stylesheet" href="styles/place-styles.css">
+    <script src="place.js" defer></script>
+    <meta name="author" content="Jonathan Villegas" />
+    <meta name="description" content="Place Webpage Week03 | WDD-131" />
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Argentina
+        </h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:650px)" srcset="hero-large.webp">
+                <source media="(min-width:465px)" srcset="hero-medium.webp">
+                <img src="hero-small.webp" alt="Mendoza Landscape">
+            </picture>
+            <div class="info-container" id="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong>148,827sq km</p>
+                <p><strong>Population:</strong>2,015,000</p>
+                <p><strong>Capital: </strong> Buenos Aires</p>
+                <p><strong>Language:</strong>Spanish</p>
+                <p><strong>Currency:</strong>Argentine Peso </p>
+                <p><strong>Time Zone:</strong> GMT -3</p>
+                <p><strong>Calling Code:</strong>+54 261 </p>
+                <p><strong>Internet TLD:</strong> .ar</p>
+
+
+            </div>
+            <div class="info-container" id="wheather">
+                <h2>Weather</h2>
+                <img id="wheather-icon" src="wheather-icon.svg" alt="Weather Icon">
+                <p><strong> Temperature: </strong> <span id="temperature"></span></p>
+                <p><strong> Conditions: </strong><span id="conditions"></span></p>
+                <p><strong>Wind: </strong><span id="wind"></span></p>
+                <p><strong> Wind Chill: </strong><span id="wind-chill"></span></p>
+
+
+
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span> © Copyright Jonathan Villegas, Mendoza
+
+        </p>
+        <p> Last Modified: <span id="lastmodified"></span>
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
