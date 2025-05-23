@@ -5,7 +5,7 @@
     --contrast-color: #991ef7d7;
     --fonts-color: rgb(250, 239, 239);
     --transperency-color: #991ef728;
-    --yellow: rgb(247, 247, 101);
+    --yellow: rgba(204, 204, 59, 0.774);
 
 }
 
@@ -64,10 +64,13 @@ header h1 {
     background-color: var(--yellow);
     align-items: center;
 
+
 }
 
-#wheather-icon {
+#weather-icon {
     max-width: 50px;
+    height: 80px;
+
 }
 
 /* footer */
@@ -84,6 +87,8 @@ footer {
 @media screen and (min-width: 650px) {
 
     .hero {
+
+
         display: flex;
         flex-direction: column;
 
@@ -103,17 +108,45 @@ footer {
 
     .info-container {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+
+
+
 
 
     }
 
-    #wheather {
+
+    #weather {
+
         align-self: flex-end;
+        bottom: 0;
+
+
     }
 
-    #wheather-icon {
+    #weather-icon {
+
+        object-fit: contain;
+
+
+
+
+    }
+
+    .icon-wrapper {
+        width: 50px;
         height: 50px;
-    }
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+
+    }
 
 }
