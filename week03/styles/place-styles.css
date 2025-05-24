@@ -20,6 +20,10 @@ h2 {
     color: var(--secundary-color);
 }
 
+p {
+    font-family: "ancizar", sans-serif;
+}
+
 /* header styling  */
 header {
     background-image: linear-gradient(to left, var(--primary-color), blue, rgb(64, 82, 245));
@@ -78,6 +82,9 @@ header h1 {
     height: 80px;
 
 }
+
+
+
 
 /* footer */
 footer {
@@ -144,6 +151,22 @@ footer {
 
     }
 
+
+
+    .icon-wrapper::after {
+
+
+        content: "____";
+
+        color: var(--secundary-color);
+        font-weight: bold;
+        display: inline;
+        position: absolute;
+        margin-top: 20px;
+
+
+    }
+
     .icon-wrapper {
         width: 50px;
         height: 50px;
@@ -151,6 +174,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
 
     }
