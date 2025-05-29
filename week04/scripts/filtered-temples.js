@@ -164,3 +164,23 @@ function TempleCards(temple) {
 }
 
 temples.forEach(TempleCards)
+
+
+// Event Listener to get temples older than 1900
+
+const templesOld = document.getElementById("temples-old");
+
+templesOld.addEventListener('click', () => {
+    document.querySelector(".figure-container").innerHTML = "";
+
+    const FilteredTemples = temples.filter(temple => {
+
+        const dedicationYear = parseInt(temple.dedicated.substring(0, 4));
+        return dedicationYear < 1900;
+
+
+    });
+
+    FilteredTemples.forEach(TempleCards);
+
+});
