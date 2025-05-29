@@ -84,44 +84,73 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Mendoza Argentina Temple",
+        location: "Mendoza, Argentina",
+        dedicated: "2024, September, 22",
+        area: 21999,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/mendoza-argentina-temple/mendoza-argentina-temple-53412.jpg"
+    },
+    {
+        templeName: "Buenos Aires Argentina Temple",
+        location: "Buenos Aires, Argentina",
+        dedicated: "1986, January, 17",
+        area: 30659,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-4088.jpg"
+    },
+    {
+        templeName: "Cordoba Argentina Temple",
+        location: "Cordoba, Argentina",
+        dedicated: "2015, May, 17",
+        area: 34369,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/cordoba-argentina-temple/cordoba-argentina-temple-11097.jpg"
+    },
+    {
+        templeName: "Asunción Paraguay Temple",
+        location: "Asunción, Paraguay",
+        dedicated: "2002, May, 19",
+        area: 11906,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    },
-    {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    },
-    {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    },
-    {
-        templeName: "Mexico City Mexico",
-        location: "Mexico City, Mexico",
-        dedicated: "1983, December, 2",
-        area: 116642,
+        templeName: "Santiago Chile Temple",
+        location: "Santiago de Chile, Chile",
+        dedicated: "1983, September, 15",
+        area: 20831,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
 
 ];
+
+//looping the temples array
+
+
+
+function TempleCards(temple) {
+
+    const container = document.querySelector('.figure-container');
+    const cardHTML =
+
+        ` <div class="figure-container">
+            <figure>
+                <img src="${temple.imageUrl}" alt="${temple.templeName}" />
+                <figcaption> <h2>${temple.templeName}</h2> </figcaption>
+                <p> <h2>Location:</h2> ${temple.location}  </p>
+                <p ><h2>Date:</h2>${temple.dedicated} </p>
+                <p><h2>Size:</h2> ${temple.area}</p>
+
+            </figure>
+        </div > `
+
+
+        ;
+
+
+    container.innerHTML += cardHTML;
+}
+
+temples.forEach(TempleCards)
