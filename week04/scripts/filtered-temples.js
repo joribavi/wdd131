@@ -133,11 +133,18 @@ const temples = [
 function TempleCards(temple) {
 
     const container = document.querySelector('.figure-container');
+
+
+
+    const figure = document.createElement("figure");
+
+
+
     const cardHTML =
 
         ` <div class="figure-container">
-            <figure>
-                <img src="${temple.imageUrl}" alt="${temple.templeName}" />
+            <figure >
+                <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy"  />
                 <figcaption> <h2>${temple.templeName}</h2> </figcaption>
                 <p><strong>Location:</strong> ${temple.location}  </p>
                 <p><strong>Date:</strong>${temple.dedicated} </p>
@@ -151,6 +158,8 @@ function TempleCards(temple) {
 
 
     container.innerHTML += cardHTML;
+
+
 }
 
 temples.forEach(TempleCards)
