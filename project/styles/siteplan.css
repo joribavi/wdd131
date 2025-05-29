@@ -1,0 +1,20 @@
+:root {
+
+    --orange: #DB3100;
+    --yellow: #DE942C;
+    --red: #DC2130;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: var(--red);
+
+}
+
+ul {
+    list-style-type: none;
+}
