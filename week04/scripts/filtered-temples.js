@@ -144,11 +144,12 @@ function TempleCards(temple) {
 
         ` <div class="figure-container">
             <figure >
-                <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy"  />
+                
                 <figcaption> <h2>${temple.templeName}</h2> </figcaption>
                 <p><strong>Location:</strong> ${temple.location}  </p>
                 <p><strong>Date:</strong>${temple.dedicated} </p>
                 <p><strong>Size:</strong> ${temple.area}</p>
+                <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy"  />
 
             </figure>
         </div > `
