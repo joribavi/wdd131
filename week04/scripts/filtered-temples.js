@@ -84,7 +84,7 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Mendoza Argentina Temple",
+        templeName: "Mendoza Argentina",
         location: "Mendoza, Argentina",
         dedicated: "2024, September, 22",
         area: 21999,
@@ -92,7 +92,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/mendoza-argentina-temple/mendoza-argentina-temple-53412.jpg"
     },
     {
-        templeName: "Buenos Aires Argentina Temple",
+        templeName: "Buenos Aires Argentina",
         location: "Buenos Aires, Argentina",
         dedicated: "1986, January, 17",
         area: 30659,
@@ -100,7 +100,7 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-4088.jpg"
     },
     {
-        templeName: "Cordoba Argentina Temple",
+        templeName: "Cordoba Argentina",
         location: "Cordoba, Argentina",
         dedicated: "2015, May, 17",
         area: 34369,
@@ -108,20 +108,20 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/cordoba-argentina-temple/cordoba-argentina-temple-11097.jpg"
     },
     {
-        templeName: "Asunción Paraguay Temple",
+        templeName: "Asunción Paraguay",
         location: "Asunción, Paraguay",
         dedicated: "2002, May, 19",
         area: 11906,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/asuncion-paraguay-temple/asuncion-paraguay-temple-6948.jpg"
     },
     {
-        templeName: "Santiago Chile Temple",
+        templeName: "Santiago Chile",
         location: "Santiago de Chile, Chile",
         dedicated: "1983, September, 15",
         area: 20831,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/santiago-chile-temple/santiago-chile-temple-45812.jpg"
     },
 
 ];

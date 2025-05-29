@@ -99,21 +99,32 @@ figcaption {
 /* cards styling */
 
 figure {
-
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: clamp(280px, 100%, 300px);
-    min-height: 400px;
+    height: clamp (380px, 400px, 420px);
+    padding: 1px;
 
 
 
 }
 
-figcaption,
+figcaption {
+    height: 50px;
+    margin: 3px 0;
+
+
+
+}
+
 p {
-    min-height: 30px;
-    margin: 5px 0;
-
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
+
+
 
 /* footer */
 
