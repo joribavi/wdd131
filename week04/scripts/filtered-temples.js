@@ -184,3 +184,66 @@ templesOld.addEventListener('click', () => {
     FilteredTemples.forEach(TempleCards);
 
 });
+
+// Event Listener to get temples newer than 2000
+
+const templesNew = document.getElementById("temples-new");
+
+templesNew.addEventListener('click', () => {
+    document.querySelector(".figure-container").innerHTML = "";
+
+    const FilteredTemples = temples.filter(temple => {
+
+        const dedicationYear = parseInt(temple.dedicated.substring(0, 4));
+        return dedicationYear > 2000;
+
+
+    });
+
+    FilteredTemples.forEach(TempleCards);
+
+});
+
+
+// Event Listener to get temples temples larger than 90,000 square feet
+
+
+const templesLarge = document.getElementById("temples-large");
+
+templesLarge.addEventListener('click', () => {
+    document.querySelector(".figure-container").innerHTML = "";
+
+    const FilteredTemples = temples.filter(temple => {
+
+        const areaLarge = parseInt(temple.area);
+        return areaLarge > 90000;
+
+
+    });
+
+    FilteredTemples.forEach(TempleCards);
+
+});
+
+
+// Event Listener to get temples temples smaller than 10000 square feet
+
+
+const templesSmall = document.getElementById("temples-small");
+
+templesSmall.addEventListener('click', () => {
+    document.querySelector(".figure-container").innerHTML = "";
+
+    const FilteredTemples = temples.filter(temple => {
+
+        const areaSmall = parseInt(temple.area);
+        return areaSmall < 10000;
+
+
+    });
+
+    FilteredTemples.forEach(TempleCards);
+
+});
+
+

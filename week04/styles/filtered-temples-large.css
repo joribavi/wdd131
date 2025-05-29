@@ -135,3 +135,13 @@ footer {
     color: white;
     text-align: center;
 }
+
+/* styling elements with Event Listener JavaScript */
+
+#temples-old,
+#temples-new,
+#temples-large,
+#temples-small {
+
+    cursor: pointer;
+}
