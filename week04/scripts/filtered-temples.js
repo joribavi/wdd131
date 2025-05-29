@@ -139,9 +139,9 @@ function TempleCards(temple) {
             <figure>
                 <img src="${temple.imageUrl}" alt="${temple.templeName}" />
                 <figcaption> <h2>${temple.templeName}</h2> </figcaption>
-                <p> <h2>Location:</h2> ${temple.location}  </p>
-                <p ><h2>Date:</h2>${temple.dedicated} </p>
-                <p><h2>Size:</h2> ${temple.area}</p>
+                <p><strong>Location:</strong> ${temple.location}  </p>
+                <p><strong>Date:</strong>${temple.dedicated} </p>
+                <p><strong>Size:</strong> ${temple.area}</p>
 
             </figure>
         </div > `
