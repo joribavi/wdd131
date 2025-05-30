@@ -5,6 +5,10 @@
     --red: #DC2130;
 }
 
+a {
+    color: var(--orange);
+}
+
 h1 {
     text-align: center;
 }
@@ -22,4 +26,21 @@ ul {
 
 p {
     font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    background-color: rgba(255, 166, 0, 0.329);
+    padding: 10px;
+}
+
+#orange {
+    color: var(--orange);
+}
+
+#yellow {
+    color: var(--yellow);
+}
+
+#red {
+    color: var(--red);
 }
