@@ -62,7 +62,7 @@ header {
 ul li::marker {
 
     content: "✅";
-    color: var(var(--orange));
+
     font-size: 1, 5rem;
 }
 
