@@ -65,3 +65,13 @@ ul li::marker {
     color: var(var(--orange));
     font-size: 1, 5rem;
 }
+
+/* simple styling for mobile */
+
+@media screen and (max-width:576px) {
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
