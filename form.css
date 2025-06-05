@@ -1,0 +1,212 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- Header --------------*/
+
+header {
+    background-color: #eee;
+    padding: 0.2rem;
+}
+
+header h1 {
+    margin: 0;
+    background-color: rgb(30, 141, 141);
+    color: #fff;
+    padding: 1rem;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: solid 1px #333;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+/*------------ Form Styling Section---------- */
+
+.review-form fieldset {
+    margin: 2rem 0;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #8daa9f;
+}
+
+.review-form legend {
+
+    color: #111111;
+    padding: 0 .5rem;
+}
+
+.review-form label {
+    display: block;
+    padding-top: 1rem;
+    color: #333333;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+
+}
+
+.review-form div {
+    padding-top: 1rem;
+    color: #111111;
+    font-size: 0.9;
+
+}
+
+.review-form input[type="text"],
+
+.review-form input[type="email"],
+.review-form input[type="cel"],
+.review-form input[type="url"],
+.review-form input[type="date"],
+.review-form select,
+.review-form input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: grey;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.review-form input[type="radio"],
+.review-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.review-form input[type="submit"] {
+
+    border: none;
+    background: rgb(21, 102, 102);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: large;
+}
+
+.review-form input:required {
+    border-right: solid 8px rgb(0, 162, 255);
+}
+
+.review-form input:required:valid {
+    border-right: solid 8px rgb(10, 52, 114);
+}
+
+/*stars section */
+
+.star-1::before {
+
+    content: '★';
+    color: yellow;
+
+}
+
+.star-2::before {
+    content: '★★';
+    color: yellow;
+}
+
+.star-3::before {
+    content: '★★★';
+    color: yellow;
+}
+
+.star-4::before {
+    content: '★★★★';
+    color: yellow;
+}
+
+.star-5::before {
+    content: '★★★★★';
+    color: yellow;
+}
+
+.stars-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 10px;
+
+}
+
+.stars-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    cursor: pointer;
+}
+
+.rating-title {
+    margin: 0;
+}
+
+.rating {
+    margin: 0;
+    gap: 4px;
+}

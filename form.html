@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Week04 - Form Assignment </title>
+    <meta name="author" content="Jonathan Villegas">
+    <meta name="description" content="Form for Week05 Assignment WDD131">
+    <link href="form.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <form method="get" action="review.html" class="review-form">
+            <fieldset>
+                <label>Product Name*
+                    <select name="product-name" required>
+                        <option value="">Select a Product &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">Cyber Security</option>
+
+                    </select>
+                </label>
+                <section class="rating">
+                    <span class="rating-title">Overall Rating</span>
+                    <div class="stars-container">
+
+
+
+                        <label class="star-1"><input type="radio" name="1-star" value="star-1"> </label>
+
+
+                        <label class="star-2"><input type="radio" name="1-star" value="star-2"> </label>
+
+                        <label class="star-3"> <input type="radio" name="1-star" value="star-3"> </label>
+
+                        <label class="star-4"><input type="radio" name="1-star" value="star-4"> </label>
+
+
+                        <label class="star-5"><input type="radio" name="1-star" value="star-5"> </label>
+
+                    </div>
+                </section>
+                <label>Date of Installation<input type="date" name="installationDate"> </label>
+                <label>Which features did you find most useful in this product?</label>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="user-friendly" value="yes"> User friendly</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+                <label><input type="checkbox" name="speed" value="yes"> Speed</label>
+
+
+
+                <label> Leave us your review (optional)<input type="text" name="review" id="review-field"></label>
+                <label> Name (optional)<input type="text" name="name"></label>
+
+
+
+            </fieldset>
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="form.js" defer></script>
+</body>
+
+</html>
