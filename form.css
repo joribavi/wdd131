@@ -85,6 +85,12 @@ footer {
     border-radius: 6px;
     padding: .5rem 2%;
     background-color: #8daa9f;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+
+
 }
 
 .review-form legend {
@@ -132,6 +138,7 @@ footer {
 .review-form input[type="radio"],
 .review-form input[type="checkbox"] {
     margin-right: 6px;
+    margin-top: 0;
 }
 
 .review-form input[type="submit"] {
@@ -146,6 +153,8 @@ footer {
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
     font-size: large;
+    margin-top: auto;
+
 }
 
 .review-form input:required {
@@ -162,6 +171,7 @@ footer {
 
     content: '★';
     color: yellow;
+
 
 }
 

@@ -8,6 +8,7 @@
     <meta name="author" content="Jonathan Villegas">
     <meta name="description" content="Form for Week05 Assignment WDD131">
     <link href="form.css" rel="stylesheet">
+    <script src="form.js" defer></script>
 </head>
 
 
@@ -20,16 +21,9 @@
         <form method="get" action="review.html" class="review-form">
             <fieldset>
                 <label>Product Name*
-                    <select name="product-name" required>
+                    <select class="product-name" name="product-name" required>
                         <option value="">Select a Product &#9662;</option>
-                        <option value="software">Software Development</option>
-                        <option value="creative">Creative Professional</option>
-                        <option value="info">Information Technology</option>
-                        <option value="data">Data Professional</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="business">Business Professional</option>
-                        <option value="security">Cyber Security</option>
+
 
                     </select>
                 </label>
@@ -55,6 +49,7 @@
                 </section>
                 <label>Date of Installation<input type="date" name="installationDate"> </label>
                 <label>Which features did you find most useful in this product?</label>
+
                 <label><input type="checkbox" name="durability" value="yes"> Durability</label>
                 <label><input type="checkbox" name="user-friendly" value="yes"> User friendly</label>
                 <label><input type="checkbox" name="design" value="yes"> Design</label>
@@ -62,13 +57,16 @@
 
 
 
+
                 <label> Leave us your review (optional)<input type="text" name="review" id="review-field"></label>
                 <label> Name (optional)<input type="text" name="name"></label>
+
+                <input type="submit" value="Post Review">
 
 
 
             </fieldset>
-            <input type="submit" value="Post Review">
+
 
         </form>
 
@@ -76,7 +74,7 @@
     <footer>
 
     </footer>
-    <script src="form.js" defer></script>
+
 </body>
 
 </html>
