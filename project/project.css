@@ -72,6 +72,12 @@ h2 {
 
     }
 
+    /*-------hero section -------*/
+
+    .hero h1 {
+        text-align: center;
+    }
+
 
     /* ---logo ----*/
     #logo {
