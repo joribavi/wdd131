@@ -59,6 +59,75 @@ h2 {
     justify-content: center;
 }
 
+/* ----- hero section ----- */
+
+.hero-image img {
+    width: 100%;
+
+}
+
+.hero {
+    position: relative;
+    margin: auto;
+}
+
+.hero-image {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: var(--blue);
+    font-size: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+
+main h1 {
+    text-align: center;
+}
+
+
+/* -----footer ------- */
+
+footer {
+    background-color: var(--yellow);
+}
+
 /* --------  Mobile ------------- */
 
 
@@ -74,9 +143,9 @@ h2 {
 
     /*-------hero section -------*/
 
-    .hero h1 {
-        text-align: center;
-    }
+
+
+
 
 
     /* ---logo ----*/
@@ -119,6 +188,7 @@ h2 {
         right: 0;
         margin-right: 30px;
         margin-top: 60px;
+        z-index: 2;
 
 
 
@@ -133,7 +203,7 @@ h2 {
         max-width: 760px;
         display: flex;
         flex-direction: column;
-        background-color: whitesmoke;
+        background-color: rgba(245, 245, 245, 0.158);
 
         padding: 0;
         margin: 0;
@@ -184,6 +254,15 @@ h2 {
     }
 
 
+    /* ----- hero section ----- */
+
+    .hero-image img {
+        width: 100%;
+        max-height: 300px;
+
+    }
+
+
 }
 
 /* --------- Desktop ---------------- */
@@ -206,15 +285,18 @@ h2 {
 
     nav {
         background-color: white;
+        margin: 0 auto;
+
 
     }
 
     .menu {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 50px;
         padding: 15px;
+
 
     }
 
@@ -230,5 +312,11 @@ h2 {
         color: var(--blue);
         font-size: x-large;
         margin-right: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-height: 900px;
+
     }
 }
