@@ -347,12 +347,13 @@ footer {
 
     .card-content a {
         text-decoration: none;
-        color: white;
+        color: red;
         font-weight: bold;
         align-self: flex-start;
         transition: color 0.2s ease;
         top: 70%;
-
+        background-color: antiquewhite;
+        padding: 10px;
 
 
     }
