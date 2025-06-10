@@ -259,6 +259,8 @@ footer {
 
     .hero-image img {
         width: 100%;
+        overflow: hidden;
+        height: 300px;
 
 
     }
@@ -457,4 +459,10 @@ footer {
         max-height: 900px;
 
     }
+
+
+    /*--testimonials -----*/
+
+
+
 }
