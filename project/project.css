@@ -30,7 +30,8 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     color: var(--red);
     padding-top: 10px;
     font-family: 'Outfit', sans-serif;
@@ -159,8 +160,8 @@ footer {
 }
 
 .testimonials-container {
-    border: 2px solid #ccc;
-    background-color: #eee;
+    border: var(--blue);
+    background-color: #3d48ac38;
     border-radius: 5px;
     padding: 16px;
     margin: 16px0;
@@ -450,6 +451,26 @@ footer {
         height: 100px;
         object-fit: contain;
     }
+
+    .testimonials {
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* ----- map and contact section ----- */
+
+    .map iframe {
+        width: 200px;
+        height: auto;
+
+    }
+
+    .contact-us-section {
+
+        gap: 20px;
+    }
 }
 
 /* --------- Desktop ---------------- */
@@ -550,6 +571,12 @@ footer {
         width: 100%;
         overflow: hidden;
         height: 700px;
+    }
+
+    /* ---- contact ------- */
+
+    .contact-us-section {
+        justify-content: center;
     }
 
 
