@@ -129,6 +129,28 @@ footer {
     background-color: var(--yellow);
 }
 
+
+/* -------- Testimonials ---------------- */
+
+.tours-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials-container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px0;
+}
+
+.image-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
 /* --------  Mobile ------------- */
 
 
@@ -141,11 +163,6 @@ footer {
         gap: 250px;
 
     }
-
-    /*-------hero section -------*/
-
-
-
 
 
 
@@ -403,6 +420,15 @@ footer {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 
     }
+
+
+    /* ---- testimonials ------ */
+
+    .image-container img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
 }
 
 /* --------- Desktop ---------------- */
@@ -454,15 +480,55 @@ footer {
         margin-right: 20px;
     }
 
-    .hero-image img {
-        width: 100%;
-        max-height: 900px;
+
+
+
+    /*----tours section main page ------ */
+
+    .tours-container {
+        display: block;
+        align-items: center;
+    }
+
+    .tour-card .img,
+    .card-container.img {
+
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+
 
     }
 
+    .tour-card .img img {
+        width: 250px;
+        height: auto;
+
+    }
 
     /*--testimonials -----*/
 
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .image-container img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    /*------hero section -----*/
+
+
+    .hero-image img {
+        width: 100%;
+        overflow: hidden;
+        height: 700px;
+    }
 
 
 }

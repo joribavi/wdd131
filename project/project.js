@@ -42,67 +42,210 @@ function showSlides(n) {
 }
 
 
-//tours section 
+// configuring tours section for both mobile and desktop version
 
-const tours = document.querySelector('.tours-container');
+const toursSectionQuery = window.matchMedia("(max-width: 576px)");
 
-const card = document.createElement("div");
+function toursSectionView(e) {
 
-card.classList.add("tour-card");
+    if (e.matches) {
 
-tours.appendChild(card);
+        const tours = document.querySelector('.tours-container');
 
-card.classList.add("card-container")
+        tours.innerHTML = "";  // reseting value of tours
 
+        const card = document.createElement("div");
 
-const imgClass = document.createElement("div");
+        card.classList.add("tour-card");
 
-imgClass.classList.add("img");
+        tours.appendChild(card);
 
-card.appendChild(imgClass);
-
-const img1 = document.createElement("img");
-
-img1.src = "images/tours-1.jpg";
-img1.alt = "cusco-tours";
-img1.loading = "lazy";
-
-imgClass.appendChild(img1);
-
-const cardContent = document.createElement("div");
-
-cardContent.classList.add("card-content");
-
-card.appendChild(cardContent);
-
-const cardTittle = document.createElement("h2");
-cardTittle.classList.add("tittle");
-
-cardContent.appendChild(cardTittle);
-
-cardTittle.textContent = "Find the Best Tours";
-
-const cardParagraph = document.createElement("p");
-
-cardParagraph.classList.add("description");
-
-cardContent.appendChild(cardParagraph);
-
-cardParagraph.textContent = "This is the place where Culture, History and Adventure meet";
+        card.classList.add("card-container")
 
 
-const Link = document.createElement("a");
+        const imgClass = document.createElement("div");
 
-cardContent.appendChild(Link);
+        imgClass.classList.add("img");
 
-Link.href = "#";
+        card.appendChild(imgClass);
 
-Link.textContent = "Read More";
+        // adding first image
+
+        const img1 = document.createElement("img");
+
+        img1.src = "images/tours-1.jpg";
+        img1.alt = "cusco-tours";
+        img1.loading = "lazy";
+
+        imgClass.appendChild(img1);
+
+
+
+        const cardContent = document.createElement("div");
+
+        cardContent.classList.add("card-content");
+
+        card.appendChild(cardContent);
+
+        const cardTittle = document.createElement("h2");
+        cardTittle.classList.add("tittle");
+
+        cardContent.appendChild(cardTittle);
+
+        cardTittle.textContent = "Find the Best Tours";
+
+        const cardParagraph = document.createElement("p");
+
+        cardParagraph.classList.add("description");
+
+        cardContent.appendChild(cardParagraph);
+
+        cardParagraph.textContent = "This is the place where Culture, History and Adventure meet";
+
+
+        const Link = document.createElement("a");
+
+        cardContent.appendChild(Link);
+
+        Link.href = "#";
+
+        Link.textContent = "Read More";
+
+    }
+    // funtion for desktop view 
+    else {
+
+        const tours = document.querySelector('.tours-container');
+
+        tours.innerHTML = "";  // reseting value of tours
+
+        const card = document.createElement("div");
+
+        card.classList.add("tour-card");
+
+        tours.appendChild(card);
+
+        card.classList.add("card-container")
+
+
+        const imgClass = document.createElement("div");
+
+        imgClass.classList.add("img");
+
+        card.appendChild(imgClass);
+
+        // adding first image
+
+        const img1 = document.createElement("img");
+
+        img1.src = "images/tours-1.jpg";
+        img1.alt = "cusco-tours";
+        img1.loading = "lazy";
+
+        imgClass.appendChild(img1);
+
+
+        // adding second image
+
+        const img2 = document.createElement("img");
+
+        img2.src = "images/tours-2.jpg";
+        img2.alt = "cusco-tours";
+        img2.loading = "lazy";
+
+        imgClass.appendChild(img2);
+
+
+        // adding third image 
+
+
+        const img3 = document.createElement("img");
+
+        img3.src = "images/tours-3.jpg";
+        img3.alt = "cusco-tours";
+        img3.loading = "lazy";
+
+        imgClass.appendChild(img3);
+
+
+
+
+    }
+
+
+}
+
+
+toursSectionQuery.addListener(toursSectionView);
+toursSectionView(toursSectionQuery);
+
+
 
 
 
 // Testimonials Section 
 
+const clients = [
+    {
+        clientName: "John Doe",
+        imageURL: "images/client-1.jpg",
+        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
+        title: "Travel Agent"
+    },
+    {
+        clientName: "John Doe",
+        imageURL: "images/client-2.jpg",
+        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
+        title: "Travel Agent"
+    },
+    {
+        clientName: "John Doe",
+        imageURL: "images/client-3.jpg",
+        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
+        title: "Travel Agent"
+    }
+]
 
+
+function ReviewCards(client) {
+
+    const testimonials = document.querySelector('.testimonials');
+
+    const reviewContainer = document.createElement("div");
+
+
+    reviewContainer.classList.add("testimonials-container");
+
+
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("image-container");
+
+
+
+
+    const cardClient =
+
+        `
+        <div class="testimonials-container">
+            <div class="image-container">
+            <img src="${client.imageURL}" alt="${client.clientName}" loading="lazy">
+                <p> <span>${client.clientName} Chris Fox.</span> ${client.title}</p>
+                <p>${client.testimonial}</p>
+            </div>    
+        </div>
+
+        `
+
+
+        ;
+
+    reviewContainer.innerHTML = cardClient;
+    testimonials.appendChild(reviewContainer);
+
+    imageContainer.innerHTML += cardClient;
+
+}
+
+clients.forEach(ReviewCards)
 
 
