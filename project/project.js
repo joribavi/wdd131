@@ -189,20 +189,20 @@ const clients = [
     {
         clientName: "John Doe",
         imageURL: "images/client-1.jpg",
-        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
-        title: "Travel Agent"
+        testimonial: " I can fully recommend these tours. I booked last year and I had an incredible time!",
+        title: "Photographer"
     },
     {
-        clientName: "John Doe",
+        clientName: "Susan James",
         imageURL: "images/client-2.jpg",
-        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
+        testimonial: "The Inca Trail was an amazing experience! Thank you very much!",
         title: "Travel Agent"
     },
     {
-        clientName: "John Doe",
+        clientName: "Carla Perez",
         imageURL: "images/client-3.jpg",
-        testimonial: " I can fully recommend this tours. I book last year and I had an incredible time!",
-        title: "Travel Agent"
+        testimonial: " I booked Cuzco City Tour and both the guide and the driver where awesome",
+        title: "Entrepreneur"
     }
 ]
 
@@ -229,7 +229,7 @@ function ReviewCards(client) {
         <div class="testimonials-container">
             <div class="image-container">
             <img src="${client.imageURL}" alt="${client.clientName}" loading="lazy">
-                <p> <span>${client.clientName} Chris Fox.</span> ${client.title}</p>
+                <p> <span>${client.clientName} </span><strong> ${client.title} </strong></p>
                 <p>${client.testimonial}</p>
             </div>    
         </div>

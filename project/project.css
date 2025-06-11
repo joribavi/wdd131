@@ -122,6 +122,27 @@ main h1 {
     text-align: center;
 }
 
+/*----- contact section -------*/
+
+.contact-us-section {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+
+}
+
+.contact-form-section form .contact-us {
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact-form-section {
+    margin-bottom: 30px;
+}
+
 
 /* -----footer ------- */
 
@@ -495,7 +516,7 @@ footer {
 
         display: flex;
         flex-direction: row;
-        gap: 50px;
+        gap: 80px;
         justify-content: center;
 
 
@@ -504,6 +525,7 @@ footer {
     .tour-card .img img {
         width: 250px;
         height: auto;
+        border-radius: 6px;
 
     }
 
