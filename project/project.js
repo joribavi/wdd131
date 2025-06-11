@@ -248,4 +248,38 @@ function ReviewCards(client) {
 
 clients.forEach(ReviewCards)
 
+// populating select with tours for webform
 
+/* Product Array List */
+
+const tripOptions = [
+    {
+        id: "dt",
+        name: "Day Trips"
+
+    },
+    {
+        id: "it",
+        name: "Inca Trail"
+
+    },
+    {
+        id: "pt",
+        name: "Private Tours"
+
+    }
+];
+
+const select = document.querySelector(".tour-name");
+
+/*  function to populate the select tag */
+
+
+
+tripOptions.forEach(tripOption => {
+    const option = document.createElement("option");
+    option.value = tripOption.id;
+    option.textContent = tripOption.name;
+    select.appendChild(option);
+
+});
