@@ -152,6 +152,7 @@ footer {
 }
 
 
+
 /* -------- Testimonials ---------------- */
 
 .tours-container {
@@ -471,6 +472,12 @@ footer {
 
         gap: 20px;
     }
+
+    /* ----- footer----- */
+    .social-media img {
+        width: 20px;
+        height: auto;
+    }
 }
 
 /* --------- Desktop ---------------- */
@@ -577,6 +584,13 @@ footer {
 
     .contact-us-section {
         justify-content: center;
+    }
+
+    /* ----footer ----- */
+
+    .social-media img {
+        width: 25px;
+        height: auto;
     }
 
 
