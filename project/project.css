@@ -116,6 +116,7 @@ h3 {
     width: 100%;
     text-align: center;
     background-color: var(--yellow);
+    font-weight: bold;
 }
 
 
@@ -632,12 +633,28 @@ label input[type="number"] {
     .tour-card {
         display: flex;
         flex-direction: row;
+        gap: 80px;
+        justify-content: center;
     }
 
     .tour-card a {
         text-decoration: none;
         position: absolute;
+        background-color: antiquewhite;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        margin-top: 300px;
+        color: red;
+        font-weight: bold;
 
+    }
+
+    .tour-card a:hover {
+
+        color: var(--orange);
     }
 
     /*--testimonials -----*/
