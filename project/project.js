@@ -100,7 +100,7 @@ function toursSectionView(e) {
 
         cardContent.appendChild(cardParagraph);
 
-        cardParagraph.textContent = "This is the place where Culture, History and Adventure meet";
+        cardParagraph.textContent = "Choose your Day Trips, book an Inca Trail Experience or a Private Tour";
 
 
         const Link = document.createElement("a");
