@@ -618,12 +618,25 @@ label input[type="number"] {
         justify-content: center;
 
 
+
     }
 
     .tour-card .img img {
         width: 250px;
         height: auto;
         border-radius: 6px;
+        position: relative;
+
+    }
+
+    .tour-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tour-card a {
+        text-decoration: none;
+        position: absolute;
 
     }
 

@@ -127,12 +127,24 @@ function toursSectionView(e) {
 
         card.classList.add("card-container")
 
+        // creating separate div structures for each img and its title
 
-        const imgClass = document.createElement("div");
+        const imgWrapper1 = document.createElement("div");
 
-        imgClass.classList.add("img");
+        imgWrapper1.classList.add("img");
 
-        card.appendChild(imgClass);
+        card.appendChild(imgWrapper1);
+
+        const imgWrapper2 = document.createElement("div");
+        imgWrapper2.classList.add("img");
+
+        card.appendChild(imgWrapper2);
+
+        const imgWrapper3 = document.createElement("div");
+        imgWrapper3.classList.add("img");
+
+        card.appendChild(imgWrapper3);
+
 
         // adding first image
 
@@ -142,7 +154,17 @@ function toursSectionView(e) {
         img1.alt = "cusco-tours";
         img1.loading = "lazy";
 
-        imgClass.appendChild(img1);
+        imgWrapper1.appendChild(img1);
+
+
+        const img1Ref = document.createElement("a"); //creating a tittle with anchor Tag for the image
+        imgWrapper1.appendChild(img1Ref);
+
+
+        img1Ref.href = "#";
+
+        img1Ref.textContent = "Day Trips";
+
 
 
         // adding second image
@@ -153,7 +175,16 @@ function toursSectionView(e) {
         img2.alt = "cusco-tours";
         img2.loading = "lazy";
 
-        imgClass.appendChild(img2);
+        imgWrapper2.appendChild(img2);
+
+
+        const img2Ref = document.createElement("a");
+        imgWrapper2.appendChild(img2Ref);
+
+
+        img2Ref.href = "#";
+
+        img2Ref.textContent = "Inca Trail";
 
 
         // adding third image 
@@ -165,7 +196,17 @@ function toursSectionView(e) {
         img3.alt = "cusco-tours";
         img3.loading = "lazy";
 
-        imgClass.appendChild(img3);
+        imgWrapper3.appendChild(img3);
+
+
+        const img3Ref = document.createElement("a");
+        imgWrapper3.appendChild(img3Ref);
+
+
+        img3Ref.href = "#";
+
+        img3Ref.textContent = "Private Tours";
+
 
 
 
