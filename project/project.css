@@ -298,7 +298,7 @@ label input[type="number"] {
     gap: 25px;
     background-color: var(--yellow);
     border-radius: 7px;
-    margin: 50px 50px 50px 50px;
+    margin: 100px 50px;
     padding: 20px;
 }
 
@@ -801,6 +801,7 @@ label input[type="number"] {
 
         width: 1000px;
         margin: 0 auto;
+
     }
 
     .about img {
