@@ -294,14 +294,27 @@ label input[type="number"] {
 .about {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 25px;
-    margin-left: 30px;
-    margin-right: 30px;
+    background-color: var(--yellow);
+    border-radius: 7px;
+    margin: 50px 50px 50px 50px;
+    padding: 20px;
+}
+
+.about img {
+
+
+    object-fit: cover;
 
 
 
 }
+
+.about p {
+    margin-left: 20px;
+}
+
 
 
 /* --------  Mobile ------------- */
@@ -610,14 +623,21 @@ label input[type="number"] {
     }
 
     /* ---- about ----- */
+
+    .about {
+
+        flex-direction: column;
+    }
+
     .about img {
 
         width: 300px;
+        height: 200px;
     }
 
     .about p {
-        width: 200px;
-
+        width: 250px;
+        text-align: center;
     }
 }
 
@@ -776,9 +796,16 @@ label input[type="number"] {
     }
 
     /* ---- about ----- */
+
+    .about {
+
+        width: 1000px;
+        margin: 0 auto;
+    }
+
     .about img {
 
-        width: 700px;
+        width: 500px;
     }
 
     .about p {
