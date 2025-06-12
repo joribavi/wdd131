@@ -35,6 +35,18 @@ const dayTrips = [
 
     },
 
+    {
+        id: "sv",
+        name: "Pisac Tour",
+        imageURL: "images/dayTrips4.jpg",
+        Duration: "6 hours",
+        Price: "50 USD",
+        Description: "Know the reachness of the Sacred Valley by taking a tour to the Pisac Ruins "
+
+
+    },
+
+
 
 ];
 

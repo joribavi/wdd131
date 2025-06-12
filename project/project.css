@@ -288,6 +288,22 @@ label input[type="number"] {
     color: var(--blue);
 }
 
+
+/* -------- About Us section ------ */
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+
+}
+
+
 /* --------  Mobile ------------- */
 
 
@@ -592,6 +608,17 @@ label input[type="number"] {
         width: 20px;
         height: auto;
     }
+
+    /* ---- about ----- */
+    .about img {
+
+        width: 300px;
+    }
+
+    .about p {
+        width: 200px;
+
+    }
 }
 
 /* --------- Desktop ---------------- */
@@ -748,5 +775,15 @@ label input[type="number"] {
 
     }
 
+    /* ---- about ----- */
+    .about img {
+
+        width: 700px;
+    }
+
+    .about p {
+        width: 500px;
+
+    }
 
 }

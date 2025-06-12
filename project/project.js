@@ -107,7 +107,7 @@ function toursSectionView(e) {
 
         cardContent.appendChild(Link);
 
-        Link.href = "#";
+        Link.href = "our-trips.html";
 
         Link.textContent = "Read More";
 
