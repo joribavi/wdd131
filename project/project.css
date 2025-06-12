@@ -253,22 +253,26 @@ label input[type="number"] {
     gap: 50px;
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 
 }
 
 .trip-container {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 350px;
     background-color: var(--yellow);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
 
 }
 
 .trip-container img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
+    border-top-left-radius: 7px;
 }
 
 .trip-image-container p {
@@ -276,6 +280,12 @@ label input[type="number"] {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+
+}
+
+.trip-image-container p strong {
+
+    color: var(--blue);
 }
 
 /* --------  Mobile ------------- */
