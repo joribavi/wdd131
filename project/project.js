@@ -161,7 +161,7 @@ function toursSectionView(e) {
         imgWrapper1.appendChild(img1Ref);
 
 
-        img1Ref.href = "#";
+        img1Ref.href = "day-trips.html";
 
         img1Ref.textContent = "Day Trips";
 
@@ -324,3 +324,5 @@ tripOptions.forEach(tripOption => {
     select.appendChild(option);
 
 });
+
+
