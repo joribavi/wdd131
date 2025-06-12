@@ -40,9 +40,11 @@ h3 {
 
 }
 
-.menu li {
+li {
     list-style: none;
 }
+
+
 
 .menu li a {
     text-decoration: none;
@@ -315,7 +317,61 @@ label input[type="number"] {
     margin-left: 20px;
 }
 
+/* ---------Inca Trail ------------ */
 
+.main-pic img {
+
+    width: 800px;
+
+    margin: 0 auto;
+}
+
+.tour-description-wrapper {
+
+    box-shadow: 1px 1px 4px #2e020241;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--yellow);
+    border-radius: 7px;
+}
+
+.tour-picture p {
+
+    text-align: center;
+    padding: 2px;
+
+}
+
+.tour-description-wrapper .tour-picture p ul li strong {
+    color: var(--orange);
+}
+
+.tour-description {
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.tour-description ul {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
 
 /* --------  Mobile ------------- */
 
