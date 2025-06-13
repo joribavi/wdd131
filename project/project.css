@@ -443,6 +443,21 @@ label input[type="number"] {
     border-radius: 7px;
 }
 
+/* -------- Private Tours ------------ */
+
+.private-tours-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.private-tours-pic img {
+
+    border-radius: 7px;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
 /* --------  Mobile ------------- */
 
 

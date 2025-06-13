@@ -182,7 +182,7 @@ function toursSectionView(e) {
         imgWrapper2.appendChild(img2Ref);
 
 
-        img2Ref.href = "#";
+        img2Ref.href = "inca-trail.html";
 
         img2Ref.textContent = "Inca Trail";
 
@@ -203,7 +203,7 @@ function toursSectionView(e) {
         imgWrapper3.appendChild(img3Ref);
 
 
-        img3Ref.href = "#";
+        img3Ref.href = "private-tours.html";
 
         img3Ref.textContent = "Private Tours";
 
