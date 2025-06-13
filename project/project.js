@@ -133,12 +133,14 @@ function toursSectionView(e) {
 
         const tours = document.querySelector('.tours-container');
 
-        tours.innerHTML = "";  // reseting value of tours
+
 
         if (!tours) {
             console.log("There are no tours in this page.");
             return;  // it exits function when tours is not found
         }
+
+        tours.innerHTML = "";  // reseting value of tours
 
         const card = document.createElement("div");
 
@@ -235,13 +237,12 @@ function toursSectionView(e) {
     }
 
 
-    toursSectionQuery.addListener(toursSectionView);
-    toursSectionView(toursSectionQuery);
-
 }
 
 
 
+toursSectionQuery.addListener(toursSectionView);
+toursSectionView(toursSectionQuery);
 
 
 
