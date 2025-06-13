@@ -116,7 +116,7 @@ function toursSectionView(e) {
 
         cardContent.appendChild(cardParagraph);
 
-        cardParagraph.textContent = "Choose your Day Trips, book an Inca Trail Experience or a Private Tour";
+        cardParagraph.textContent = "Choose your day trips, book an Inca Trail experience, or a Private Tour";
 
 
         const Link = document.createElement("a");
@@ -167,7 +167,7 @@ function toursSectionView(e) {
         card.appendChild(imgWrapper3);
 
 
-        // adding first image
+        // adding the first image
 
         const img1 = document.createElement("img");
 
@@ -178,7 +178,7 @@ function toursSectionView(e) {
         imgWrapper1.appendChild(img1);
 
 
-        const img1Ref = document.createElement("a"); //creating a tittle with anchor Tag for the image
+        const img1Ref = document.createElement("a"); //creating a title with anchor Tag for the image
         imgWrapper1.appendChild(img1Ref);
 
 
@@ -188,7 +188,7 @@ function toursSectionView(e) {
 
 
 
-        // adding second image
+        // adding a second image
 
         const img2 = document.createElement("img");
 
@@ -208,7 +208,7 @@ function toursSectionView(e) {
         img2Ref.textContent = "Inca Trail";
 
 
-        // adding third image 
+        // adding the  third image 
 
 
         const img3 = document.createElement("img");
@@ -265,7 +265,7 @@ const clients = [
     {
         clientName: "Carla Perez",
         imageURL: "images/client-3.jpg",
-        testimonial: " I booked Cuzco City Tour and both the guide and the driver where awesome",
+        testimonial: " I booked the Cusco City Tour, and both the guide and the driver were awesome",
         title: "Entrepreneur"
     }
 ]

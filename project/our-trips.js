@@ -8,7 +8,7 @@ const dayTrips = [
         imageURL: "images/dayTrips1.jpg",
         Duration: "12 hours",
         Price: "150 USD",
-        Description: "In this tour you will know Machu Pichu and its sorroundings, a mix of culture, nature and archeology "
+        Description: "In this tour, you will visit Machu Picchu and its surroundings, a mix of culture, nature and archeology "
 
 
     },
@@ -19,7 +19,7 @@ const dayTrips = [
         imageURL: "images/dayTrips2.jpg",
         Duration: "5 hours",
         Price: "25 USD",
-        Description: "Discover all Cusco has to offer at one tour! Take a tour through the main squares, museums, churches and the most important arqueological points of the City "
+        Description: "Discover all that Cusco has to offer in one tour! Visit the main squares, museums, churches and the most important archeological sites of the City "
 
 
     },
@@ -30,7 +30,7 @@ const dayTrips = [
         imageURL: "images/dayTrips3.jpg",
         Duration: "3 hours",
         Price: "70 USD",
-        Description: "Have lunch at one of the best local restaurants of the City and you will know why peruvian food is so well known "
+        Description: "Have lunch at one of the best local restaurants of the city, and you will know why peruvian food is so well known "
 
 
     },
@@ -41,7 +41,7 @@ const dayTrips = [
         imageURL: "images/dayTrips4.jpg",
         Duration: "6 hours",
         Price: "50 USD",
-        Description: "Know the reachness of the Sacred Valley by taking a tour to the Pisac Ruins "
+        Description: "Discover the richness of the Sacred Valley by taking a tour to the Pisac Ruins "
 
 
     },
@@ -53,7 +53,7 @@ const dayTrips = [
         imageURL: "images/incaTrail4.jpg",
         Duration: "5 Days",
         Price: "1200 USD",
-        Description: "Enjoy the whole experience with the best guides of Peru"
+        Description: "Enjoy the full experience with the best guides of Peru"
 
 
     },
@@ -64,7 +64,7 @@ const dayTrips = [
         imageURL: "images/privateTours.jpg",
         Duration: "",
         Price: "",
-        Description: "Custom your experience and live it with your family or friends"
+        Description: "Customize your experience and enjoy it with your family or friends"
 
 
     },
