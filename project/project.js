@@ -326,3 +326,30 @@ tripOptions.forEach(tripOption => {
 });
 
 
+/* function for local storage  */
+
+
+let visits = 'visitsNumber';
+
+if (localStorage.getItem(visits) === null) {
+    // if there are no page visits set to 0
+    localStorage.setItem(visits, '0');
+}
+
+// Recover current visits number
+let visitsNumber = parseInt(localStorage.getItem(visits));
+
+// Adding counter after visits
+visitsNumber++;
+
+// Storing Visits Number
+localStorage.setItem(visits, visitsNumber.toString());
+
+console.log(`Number of Visits: ${visitsNumber}`);
+
+
+
+
+
+
+

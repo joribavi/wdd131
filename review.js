@@ -15,20 +15,3 @@ localStorage.setItem('reviewsCount-ls', reviewsCount);
 
 
 
-
-/*
-let reviewsCount = localStorage.getItem("reviewsCount");
-
-if (!reviewsCount) {
-
-    reviewsCount = 0;
-}
-else {
-    reviewsCount = parseInt(reviewsCount, 10);
-}
-
-reviewsCount++;
-
-localStorage.setItem("reviewsCount", reviewsCount.toString());
-
-document.getElementById("reviews").textContent = reviewsCount; */

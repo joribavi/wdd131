@@ -113,3 +113,6 @@ function showTrips(dayTrip) {
 
 dayTrips.forEach(showTrips);
 
+
+
+
