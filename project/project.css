@@ -268,6 +268,7 @@ label input[type="number"] {
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
 
+
 }
 
 .trip-container img {
@@ -321,10 +322,62 @@ label input[type="number"] {
 
 
 .gallery {
+    background-color: transparent;
+    perspective: 1000px;
+    /* 3d effect  */
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
+
+}
+
+.gallery-inner {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.gallery:hover .gallery-inner {
+    transform: rotateY(180deg);
+}
+
+.gallery-inner .main-pic {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+
+
+
+}
+
+
+.gallery-back {
+    background-color: var(--yellow);
+    color: white;
+    transform: rotateY(180deg);
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+
+
+.gallery-back h4 {
+    color: var(--red);
+
+
+}
+
+.gallery-back p {
+    color: var(--blue);
+    font-weight: bolder;
+
 
 }
 
@@ -351,6 +404,7 @@ label input[type="number"] {
     margin: 0 auto;
     background-color: var(--yellow);
     border-radius: 7px;
+
 }
 
 .tour-picture p {
