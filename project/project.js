@@ -14,6 +14,7 @@ hambutton.addEventListener('click', () => {
 
 // hero section
 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -22,24 +23,35 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+
 
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("hero-image");
 
+    if (slides.length === 0) {
+        console.log("There are no slides in this page.");
+        return;  // it exits function when no slides are found
+    }
+
+
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+
+
     }
+
 
     slides[slideIndex - 1].style.display = "block";
 
+
+
+
 }
+
 
 
 // configuring tours section for both mobile and desktop version
@@ -51,6 +63,10 @@ function toursSectionView(e) {
     if (e.matches) {
 
         const tours = document.querySelector('.tours-container');
+        if (!tours) {
+            console.log("There are no tours in this page.");
+            return;  // it exits function when tours is not found
+        }
 
         tours.innerHTML = "";  // reseting value of tours
 
@@ -118,6 +134,11 @@ function toursSectionView(e) {
         const tours = document.querySelector('.tours-container');
 
         tours.innerHTML = "";  // reseting value of tours
+
+        if (!tours) {
+            console.log("There are no tours in this page.");
+            return;  // it exits function when tours is not found
+        }
 
         const card = document.createElement("div");
 
@@ -214,11 +235,13 @@ function toursSectionView(e) {
     }
 
 
+    toursSectionQuery.addListener(toursSectionView);
+    toursSectionView(toursSectionQuery);
+
 }
 
 
-toursSectionQuery.addListener(toursSectionView);
-toursSectionView(toursSectionQuery);
+
 
 
 
@@ -251,6 +274,11 @@ const clients = [
 function ReviewCards(client) {
 
     const testimonials = document.querySelector('.testimonials');
+
+    if (!testimonials) {
+        console.log("There are no testimonials in this page.");
+        return;  // it exits function when testimonials is not found
+    }
 
     const reviewContainer = document.createElement("div");
 
@@ -317,6 +345,7 @@ const select = document.querySelector(".tour-name");
 
 
 
+
 tripOptions.forEach(tripOption => {
     const option = document.createElement("option");
     option.value = tripOption.id;
@@ -346,10 +375,5 @@ visitsNumber++;
 localStorage.setItem(visits, visitsNumber.toString());
 
 console.log(`Number of Visits: ${visitsNumber}`);
-
-
-
-
-
 
 
