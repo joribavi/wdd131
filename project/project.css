@@ -248,7 +248,8 @@ label input[type="number"] {
 
 /*----------Day Trips ----------------------*/
 
-.day-trips {
+.day-trips,
+.all-trips {
 
     display: flex;
     flex-wrap: wrap;
@@ -945,6 +946,11 @@ label input[type="number"] {
     .about p {
         width: 500px;
 
+    }
+
+    .all-trips {
+        width: 1000px;
+        margin: auto;
     }
 
 }

@@ -1,4 +1,4 @@
-/*---------------- Day Trips Section -----------------  */
+/*---------------- Our Trips Section -----------------  */
 
 
 const dayTrips = [
@@ -47,12 +47,35 @@ const dayTrips = [
     },
 
 
+    {
+        id: "it",
+        name: "Inca Trail",
+        imageURL: "images/incaTrail4.jpg",
+        Duration: "5 Days",
+        Price: "1200 USD",
+        Description: "Enjoy the whole experience with the best guides of Peru"
+
+
+    },
+
+    {
+        id: "pt",
+        name: "Private Tours",
+        imageURL: "images/privateTours.jpg",
+        Duration: "",
+        Price: "",
+        Description: "Custom your experience and live it with your family or friends"
+
+
+    },
+
+
 
 ];
 
 function showTrips(dayTrip) {
 
-    const tripsWrapper = document.querySelector(".day-trips");
+    const tripsWrapper = document.querySelector(".all-trips");
 
     const tripContainer = document.createElement("div");
 
@@ -89,6 +112,4 @@ function showTrips(dayTrip) {
 
 
 dayTrips.forEach(showTrips);
-
-
 
