@@ -178,8 +178,8 @@ footer p {
     border: var(--blue);
     background-color: #3d48ac38;
     border-radius: 5px;
-    padding: 16px;
-    margin: 16px0;
+    padding: 5px;
+    margin: 16px;
 }
 
 .image-container img {
